@@ -5,13 +5,20 @@ import {
   useEffect,
   useReducer,
 } from "react";
+import citiesSrc from '../cities.json'
 
+// FOR USE IN LOCAL JSON SERVER OPTION
 const BASE_URL = "http://localhost:9000";
 
 const CitiesContext = createContext();
 
 const initialState = {
-  cities: [],
+  // FOR USE IN LOCAL JSON SERVER OPTION
+  // cities: [],
+
+    //  FOR PULLING DIRECTLY FILE 
+  cities: citiesSrc.cities,
+
   isLoading: false,
   currentCity: {},
   error: "",
@@ -56,23 +63,24 @@ function CitiesProvider({ children }) {
     initialState
   );
 
-  useEffect(function () {
-    async function fetchCities() {
-      dispatch({ type: "loading" });
-      try {
-        const res = await fetch(`${BASE_URL}/cities`);
-        const data = await res.json();
-        // setCities(data);
-        dispatch({ type: "cities/loaded", payload: data });
-      } catch {
-        dispatch({
-          type: "rejected",
-          payload: "There was an error loading cities...",
-        });
-      }
-    }
-    fetchCities();
-  }, []);
+  // FOR USE IN LOCAL JSON SERVER OPTION
+  // useEffect(function () {
+  //   async function fetchCities() {
+  //     dispatch({ type: "loading" });
+  //     try {
+  //       const res = await fetch(`${BASE_URL}/cities`);
+  //       const data = await res.json();
+  //       // setCities(data);
+  //       dispatch({ type: "cities/loaded", payload: data });
+  //     } catch {
+  //       dispatch({
+  //         type: "rejected",
+  //         payload: "There was an error loading cities...",
+  //       });
+  //     }
+  //   }
+  //   fetchCities();
+  // }, []);
 
   const getCity = useCallback(
     async function getCity(id) {
