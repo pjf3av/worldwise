@@ -1,8 +1,21 @@
-# React + Vite
+# Worldwise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Note: This project is based on the [The Ultimate React Course by Jonas Schmedtmann](https://www.udemy.com/course/the-ultimate-react-course/)**.
 
-Currently, two official plugins are available:
+Basic web application designed for tourists to log the cities they've visited and leave personal notes on favorite destinations. Developed to showcase the functionality of React Router, the Context API, and integration with the Leaflet library for interactive map functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Deployment: [https://pjf3av-worldwise.netlify.app/](https://pjf3av-worldwise.netlify.app/)**.
+
+## Key Features
+- User authentication
+- Mock API for loading/saving destinations
+- Interactive map for viewing saved destinations and adding new ones
+- Shell of full site
+
+## Development Technologies
+- React
+- Context API
+- React Router
+- React Leaflet & Leaflet (map)
+- React Datepicker
+- CSS Modules (styling)
