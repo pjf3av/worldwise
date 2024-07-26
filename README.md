@@ -19,3 +19,40 @@ Basic web application designed for tourists to log the cities they've visited an
 - React Leaflet & Leaflet (map)
 - React Datepicker
 - CSS Modules (styling)
+
+## Getting Started
+To clone and deploy this project locally, follow these simple steps.
+
+### Prerequisites
+
+First, make sure you have the latest version of npm:
+
+```bash
+npm install npm@latest -g
+```
+
+### Installation
+
+1. Clone this repo
+
+```
+git clone https://github.com/pjf3av/react-quiz.git
+```
+
+2. Install NPM packages
+
+```
+npm i
+```
+
+3. Start JSON server
+
+```
+npm run server
+```
+
+4. Start server
+
+```
+npm run dev
+```
