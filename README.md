@@ -6,6 +6,10 @@ Basic web application designed for tourists to log the cities they've visited an
 
 **Live Deployment: [https://pjf3av-worldwise.netlify.app/](https://pjf3av-worldwise.netlify.app/)**.
 
+## Please note!
+
+The map interactivity, including loading city details, saving new cities, and deleting cities from the list are not available functionalities on the live Netlify deployment linked above. To demo full functionalities of the app, please see the instructions below for how to clone, start the local JSON server, and deploy the app.
+
 ## JSON Server
 
 The main branch of this repo relies on a live JSON server, a simulation of interaction with a backend server to provide question data. The live version (on the "netlify" branch) loads the questions directly from the JSON file in the "src" folder. 
