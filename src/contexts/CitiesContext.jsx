@@ -5,13 +5,20 @@ import {
   useReducer,
   useCallback,
 } from "react";
+import citiesSrc from "../cities.json";
 
 const BASE_URL = "http://localhost:9000";
 
 const CitiesContext = createContext();
 
 const initialState = {
-  cities: [],
+  // FOR USE IN LOCAL JSON SERVER OPTION
+  // populated by fetchCities uesEffect below
+  // cities: [],
+
+  //  FOR PULLING DIRECTLY FROM FILE
+  cities: citiesSrc.cities,
+
   isLoading: false,
   currentCity: {},
   error: "",
