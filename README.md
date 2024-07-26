@@ -12,7 +12,7 @@ The map interactivity, including loading city details, saving new cities, and de
 
 ## JSON Server
 
-The main branch of this repo relies on a live JSON server, a simulation of interaction with a backend server to provide question data. The live version (on the "netlify" branch) loads the questions directly from the JSON file in the "src" folder. 
+The main branch of this repo relies on a live JSON server, a simulation of interaction with a backend server to provide question data. The live version (on the "netlify" branch) loads the initial cities directly from the JSON file in the "src" folder. 
 
 ## Key Features
 - User authentication
